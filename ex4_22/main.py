@@ -68,13 +68,13 @@ def input_list_1(msg, type):
     return numbers
 
 
-numbers1 = input_list_1("Введите список 1 целых чисел (пустой ввод - завершение списка):", lambda x: int(x))
-print(f"Набор 1: {numbers1}")
-numbers2 = input_list_1("Введите список 2 целых чисел (пустой ввод - завершение списка):", lambda x: int(x))
-print(f"Набор 2: {numbers2}")
-set_1 = set(numbers1)
+numbers_1 = input_list_1("Введите список 1 целых чисел:", lambda x: int(x))
+print(f"Набор 1: {numbers_1}")
+numbers_2 = input_list_1("Введите список 2 целых чисел:", lambda x: int(x))
+print(f"Набор 2: {numbers_2}")
+set_1 = set(numbers_1)
 print(f"Множество 1: {set_1}")
-set_2 = set(numbers2)
+set_2 = set(numbers_2)
 print(f"Множество 2: {set_2}")
 intersection = list(set_1.intersection(set_2))
 intersection.sort()
